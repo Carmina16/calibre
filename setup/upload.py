@@ -49,7 +49,7 @@ def installer_description(fname):
     if fname.endswith('.msi'):
         return 'Windows %sinstaller' % ('64bit ' if '64bit' in fname else '')
     if fname.endswith('.dmg'):
-        return 'OS X dmg'
+        return 'macOS dmg'
     if fname.endswith('.exe'):
         return 'Calibre Portable'
     return 'Unknown file'
